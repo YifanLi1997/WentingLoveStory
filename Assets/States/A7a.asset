@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d27fa23d7877417aad8464b53a879b5, type: 3}
+  m_Name: A7a
+  m_EditorClassIdentifier: 
+  storyText: "--\u4E00\u4E2A\u661F\u671F\u540E \u98DE\u673A\u4E0A--\n\u4E0A\u6B21\u6E29\u5A77\u548C\u7ECF\u7EAA\u4EBA\u901A\u5B8C\u7535\u8BDD\u540E
+    \u7ECF\u7EAA\u4EBA\u7279\u610F\u98DE\u4E86\u4E00\u8D9F\u52A0\u5DDE\n\"\u5982\u679C\u4E0D\u662F\u4E07\u4E0D\u5F97\u5DF2
+    \u6211\u4EEC\u80AF\u5B9A\u662F\u4E0D\u4F1A\u505C\u5DE5\u7684 \u8FD9\u6B21\u4F11\u606F\u8FD8\u662F\u96EF\u5A55\u59D0\u53CD\u590D\u5411\u5927\u8001\u677F\u6C42\u6765\u7684
+    \u6211\u4EEC\u73B0\u5728\u53EA\u5E0C\u671B\u80FD\u5C3D\u5FEB\u5E2E\u4ED6\u8C03\u6574\u597D\u72B6\u6001
+    \u867D\u7136\u7ECF\u7EAA\u4EBA\u7B97\u5DE5\u4F5C\u4F19\u4F34 \u4F46\u662F\u4F5C\u4E3A\u4E00\u4E2A\u670B\u53CB\u6211\u4E5F\u662F\u771F\u7684\u5FC3\u75BC\"\n\"1\"\u952E
+    \u7EE7\u7EED"
+  nextStates:
+  - {fileID: 11400000, guid: e4162f0815f2a43589ee372e27b9325a, type: 2}
+  imageCanvasName: A2
+  isTitle: 0
+  di: 0
+  hua: 0
+  wang: 0
+  xiao: 0
+  w_X: 0

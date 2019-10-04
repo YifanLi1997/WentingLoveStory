@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d27fa23d7877417aad8464b53a879b5, type: 3}
+  m_Name: A4-1g
+  m_EditorClassIdentifier: 
+  storyText: "--\u65E7\u91D1\u5C71\u5E02\u533A--\n\u679C\u7136 \u6E29\u5A77\u627E\u5230\u8F66\u5B50\u7684\u65F6\u5019\u4E5F\u627E\u5230\u4E86\u7F5A\u5355
+    \u6570\u76EE\u8FD8\u4E0D\u5C0F \u770B\u6765\u4ECA\u5929officer\u7684\u5FC3\u60C5\u4E0D\u592A\u597D\n'\u5C31\u5F53\u662F\u4ECA\u5929\u8FEA\u739B\u5E0C\u89C1\u9762\u4F1A\u7684\u95E8\u7968\u94B1\u597D\u4E86'
+    \u5F00\u8F66\u56DE\u5BB6\u7684\u8DEF\u4E0A \u6E29\u5A77\u4E00\u8DEF\u54FC\u7740\u5C0F\u66F2
+    \u5FC3\u60C5\u6109\u5FEB\n\"1\"\u952E \u7EE7\u7EED"
+  nextStates:
+  - {fileID: 11400000, guid: 3c3d21752c9264a2e93b6e1586021dae, type: 2}
+  imageCanvasName: A4
+  isTitle: 0
+  di: 0
+  hua: 0
+  wang: 0
+  xiao: 0
+  w_X: 0
