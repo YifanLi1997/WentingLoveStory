@@ -8,28 +8,22 @@ using UnityEngine.UI;
 public class GameLogic : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI storyTMP;
-    [SerializeField] GameObject titleTMP;
     [SerializeField] State startingState;
 
     string imageCanvasName = "0";
     GameObject imageCanvas;
     State state;
 
-    int dimaxi = 0;
-    int huachenyu = 0;
-    int wangyibo = 0;
-    int xiaozhan = 0;
-    int wang_xiao = 0;
+    Log m_log;
 
-    // Start is called before the first frame update
     void Start()
     {
         state = startingState;
+        m_log = FindObjectOfType<Log>();
 
         UpdateStoryInfo();
     }
 
-    // Update is called once per frame
     void Update()
     {
         ManageState();
@@ -41,6 +35,7 @@ public class GameLogic : MonoBehaviour
         for (int i = 0; i < nextStates.Length; i++) {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i)) {
                 state = nextStates[i];
+                m_log.AddLog(state.GetStoryText());
             }
         }
 
@@ -49,16 +44,9 @@ public class GameLogic : MonoBehaviour
 
     private void UpdateStoryInfo()
     {
-        storyTMP.SetText(state.GetStoryText());
-
-        if (state.GetIsTitle())
-        {
-            titleTMP.SetActive(true);
-        }
-        else
-        {
-            titleTMP.SetActive(false);
-        }
+        //StopAllCoroutines();
+        //StartCoroutine(TypeSentence(state.GetStoryText()));
+        storyTMP.text = state.GetStoryText();
 
         if (imageCanvasName != state.GetIimageCanvasName())
         {
@@ -69,13 +57,15 @@ public class GameLogic : MonoBehaviour
         imageCanvasName = state.GetIimageCanvasName();
         imageCanvas = GameObject.Find(imageCanvasName);
         imageCanvas.GetComponent<CanvasGroup>().alpha = 1f;
-
-        dimaxi += state.GetDi();
-        huachenyu += state.GetHua();
-        wangyibo += state.GetWang();
-        xiaozhan += state.GetXiao();
-        wang_xiao += state.GetWX();
     }
-        
-        
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        storyTMP.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            Debug.Log(letter);
+            yield return null;
+        }
+    }
 }
