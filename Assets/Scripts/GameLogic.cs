@@ -35,18 +35,22 @@ public class GameLogic : MonoBehaviour
         for (int i = 0; i < nextStates.Length; i++) {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i)) {
                 state = nextStates[i];
+
+                if (state.name == "0")
+                {
+                    m_log.Reset();
+                }
+
                 m_log.AddLog(state.GetStoryText());
+                UpdateStoryInfo();
             }
         }
-
-        UpdateStoryInfo();
     }
 
     private void UpdateStoryInfo()
     {
-        //StopAllCoroutines();
-        //StartCoroutine(TypeSentence(state.GetStoryText()));
-        storyTMP.text = state.GetStoryText();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(state.GetStoryText()));
 
         if (imageCanvasName != state.GetIimageCanvasName())
         {
@@ -64,8 +68,8 @@ public class GameLogic : MonoBehaviour
         storyTMP.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            Debug.Log(letter);
-            yield return null;
+            storyTMP.text += letter;
+            yield return new WaitForFixedUpdate();
         }
     }
 }

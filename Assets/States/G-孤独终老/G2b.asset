@@ -19,9 +19,3 @@ MonoBehaviour:
   nextStates:
   - {fileID: 11400000, guid: 207eafc958ab54824974a050ec06a2a2, type: 2}
   imageCanvasName: A2
-  isTitle: 0
-  di: 0
-  hua: 0
-  wang: 0
-  xiao: 0
-  w_X: 0

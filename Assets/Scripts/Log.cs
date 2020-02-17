@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Log : MonoBehaviour
@@ -22,5 +23,10 @@ public class Log : MonoBehaviour
     public void DisenablePanel()
     {
         logPanel.SetActive(false);
+    }
+
+    public void Reset()
+    {
+        logText.text = "";
     }
 }

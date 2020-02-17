@@ -17,13 +17,7 @@ MonoBehaviour:
     \u6211\u4EEC\u5DF2\u7ECF\u5F88\u5C3D\u529B\u4E86 \u8FD9\u4E00\u6B21\u627E\u60A8
     \u6211\u4EE3\u8868\u516C\u53F8\u5E0C\u671B\u8BF7\u60A8\u56DE\u56FD\u4E00\u8D9F
     \u6211\u4EEC\u8D1F\u8D23\u4F4F\u5BBF\u548C\u4EA4\u901A \u4EE5\u53CA \u8FD9\u662F\u8F9B\u82E6\u8D39\u548C\u4FDD\u5BC6\u5408\u540C...\"\n\"1\"\u952E
-    \u7EE7\u7EED"
+    \u7EE7\u7EED\n\n"
   nextStates:
   - {fileID: 11400000, guid: c1d75d49d92d247b2a8179035c2e21ec, type: 2}
   imageCanvasName: A4
-  isTitle: 0
-  di: 0
-  hua: 0
-  wang: 0
-  xiao: 0
-  w_X: 0

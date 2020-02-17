@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyText: "--\u5FAE\u4FE1\u6D88\u606F--\n1 - \u554A\u554A\u554A\u554A\u554A\u554A
     \u8C22\u8C22\u7238\u7238\n2 - \u7B97\u4E86 \u6211\u8FD8\u662F\u5F85\u5728\u623F\u95F4\u770B
-    \u81F4\u547D\u5973\u4EBA \u5427"
+    \u81F4\u547D\u5973\u4EBA \u5427\n\n"
   nextStates:
   - {fileID: 11400000, guid: ab37170cb7bb34543bfebda556fb3266, type: 2}
   - {fileID: 11400000, guid: ff18c8eae97e34440b5d63947bf8c4cd, type: 2}
